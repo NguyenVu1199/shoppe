@@ -37,9 +37,6 @@
               placeholder="Dán link Shopee vào đây..."
               id="shopee-link"
             />
-            <span class="input-icon" id="paste-icon"
-              ><i class="fa fa-paste"></i
-            ></span>
           </div>
           <button id="generate-btn" class="main-btn">
             <i class="fa fa-pen"></i> Tạo Link Ngay
@@ -139,40 +136,12 @@
       }
 
       const input = document.getElementById("shopee-link");
-      const pasteIcon = document.getElementById("paste-icon");
       const generateBtn = document.getElementById("generate-btn");
       const linkResult = document.getElementById("link-result");
       const genLink = document.getElementById("gen-link");
       const copyLinkBtn = document.getElementById("copy-link-btn");
       const buyLink = document.getElementById("buy-link");
       const shareLink = document.getElementById("share-link");
-
-      // Paste from clipboard when clicking icon
-      pasteIcon.addEventListener("click", async function () {
-        if (navigator.clipboard) {
-          try {
-            const text = await navigator.clipboard.readText();
-            input.value = text;
-            // Validate Shopee URL
-            const validationResult = isValidShopeeURL(input.value.trim());
-            if (validationResult === 1) {
-              showPopup("Vui lòng nhập link!", "error");
-            } else if (validationResult === 2) {
-              showPopup("Link không hợp lệ!", "error");
-            } else {
-              const affiliateLink = genAffiliateLink(text);
-              genLink.textContent = affiliateLink;
-              linkResult.classList.remove("hidden");
-              showPopup("Dán link thành công!", "success");
-            }
-          } catch (err) {
-            console.log(err);
-            showPopup("Không thể lấy dữ liệu clipboard!", "error");
-          }
-        } else {
-          showPopup("Trình duyệt không hỗ trợ clipboard!", "error");
-        }
-      });
 
       // Also validate when click "Tạo Link Ngay"
       generateBtn.addEventListener("click", function () {
@@ -216,4 +185,5 @@
     </script>
   </body>
 </html>
+
 
