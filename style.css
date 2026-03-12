@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(180deg, #C8E6C9 0%, #ffffff 100%);
+}
+
+.main-container {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 32px 0 16px 0;
+}
+
+.icon-link {
+    font-size: 32px;
+    color: #43A047;
+    vertical-align: middle;
+}
+
+header h1 {
+    color: #43A047;
+    margin: 8px 0 8px 0;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.url-tag {
+    display: inline-block;
+    background: #E8F5E9;
+    color: #2E7D32;
+    padding: 7px 22px;
+    border-radius: 20px;
+    font-size: 1em;
+    margin-top: 8px;
+}
+
+.content-box {
+    background: #fff;
+    border-radius: 20px;
+    margin: 32px auto;
+    max-width: 520px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    padding: 24px;
+}
+
+.form-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2E7D32;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px 0 0 8px;
+    font-size: 1em;
+}
+
+.input-icon {
+    padding: 10px 16px;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    color: #2E7D32;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.input-icon:hover {
+    background: #E8F5E9;
+}
+
+.main-btn {
+    width: 100%;
+    background: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: background 0.2s;
+}
+
+.main-btn:hover {
+    background: #43A047;
+}
+
+.guide-section {
+    background: #F1F8F4;
+    border-radius: 10px;
+    padding: 18px 18px 12px 18px;
+    margin-top: 20px;
+}
+
+.guide-title {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2E7D32;
+}
+
+ol {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 1em;
+    color: #222;
+}
+
+ol li {
+    margin-bottom: 7px;
+}
+
+.fb-post-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 7px 16px;
+    background: #fff;
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+    border-radius: 6px;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+
+.fb-post-btn:hover {
+    background: #4CAF50;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Link Result */
+.link-result {
+    background: #F1F8F4;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 18px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.link-box {
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    background: #fff;
+    padding: 10px 13px;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.link-box-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.link-success {
+    color: #2E7D32;
+    font-weight: 600;
+    font-size: 1.08em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.copy-link-btn {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 13px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.2s;
+}
+
+.copy-link-btn:hover {
+    background: #388E3C;
+}
+
+.link-box-content {
+    font-size: 1em;
+    color: #222;
+    word-break: break-all;
+    margin-top: 3px;
+}
+
+.link-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.08em;
+    font-weight: 500;
+    padding: 10px 24px;
+    text-decoration: none;
+    transition: background 0.2s;
+    justify-content: center;   /* Căn giữa ngang */
+    align-items: center;       /* Căn giữa dọc */
+    text-align: center;
+    gap: 8px; 
+}
+
+.buy-btn {
+    background: #2E7D32;
+    color: #fff;
+}
+
+.buy-btn:hover {
+    background: #1B5E20;
+}
+
+.share-btn {
+    background: #66BB6A;
+    color: #fff;
+}
+
+.share-btn:hover {
+    background: #43A047;
+}
+
+/* Popup */
+.popup-noti {
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.13);
+    border-radius: 10px;
+    padding: 16px 26px 16px 16px;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    min-width: 260px;
+    font-size: 1.06em;
+    font-weight: 500;
+    animation: popup-show 0.4s;
+}
+
+.popup-noti.hidden {
+    display: none;
+}
+
+.popup-icon.success {
+    color: #2E7D32;
+    background: #E8F5E9;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7em;
+    margin-right: 13px;
+}
+
+.popup-icon.error {
+    color: #D32F2F;
+    background: #FFEBEE;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7em;
+    margin-right: 13px;
+}
+
+@keyframes popup-show {
+    0% { opacity: 0; transform: translateX(-50%) scale(0.9); }
+    100% { opacity: 1; transform: translateX(-50%) scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .content-box {
+        margin: 12px;
+        padding: 16px;
+    }
+}
+#share-link {
+    background-color: #2E7D32;
+}
+#copyIcon {
+    color: #1B5E20;
+}
+@media (max-width: 400px) {
+    .link-actions {
+        flex-direction: column;
+    }
+
+    .link-actions .action-btn {
+        width: 90%;
+    }
+
+    .share-btn {
+        order: 2; /* Đưa nút Chia sẻ xuống dưới */
+    }
+
+    .buy-btn {
+        order: 1; /* Nút Mua ngay nằm trên */
+    }
+}
